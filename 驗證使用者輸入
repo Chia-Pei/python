@@ -1,0 +1,9 @@
+UserName =input("請輸入使用者名稱:")
+if len(UserName) > 12:               #如果超過12字元
+    print('不能超過12字元')
+elif " " in UserName:                #如果含有空格
+    print("不能有空格")
+elif not UserName.isalpha():         #如果含有數字
+    print("不能包含數字") 
+else:
+    print('歡迎'+ UserName)
